@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Crime and Criminals | English Lesson</title>
-}
 <style>
 :root{
 --navy:#24374b;--blue:#507da4;--blue-light:#eaf2f9;
@@ -183,188 +182,8 @@ main{padding:10px}
 .grid{grid-template-columns:1fr}
 .card .photo{height:165px}
 }
-/* POLICE CASE FILE THEME */
-:root {
---navy: #101c2d;
---blue: #263e5b;
---blue-light: #e3e8ef;
---bg: #171d25;
---paper: #252d37;
---line: #46515e;
---muted: #b5bec9;
---green: #26734d;
---green-bg: #e0f3e7;
---red: #a94449;
---red-bg: #fff0f0;
---gold: #f4c928;
---blue-dark: #17283b;
-}
-
-body {
-background:
-radial-gradient(ellipse at top, #303a47 0%, #171d25 65%);
-color: #edf1f5;
-}
-
-header {
-position: relative;
-overflow: hidden;
-background: linear-gradient(135deg, #111a27, #26374c);
-border-bottom: 4px solid var(--gold);
-}
-
-
-
-.eyebrow {
-color: var(--gold);
-}
-
-header h1 {
-color: #fff;
-text-transform: uppercase;
-letter-spacing: 1.5px;
-}
-
-header p {
-color: #c4ccd6;
-}
-
-section {
-position: relative;
-isolation: isolate;
-overflow: hidden;
-background: #252d37;
-border: 1px solid #485463;
-border-radius: 12px;
-box-shadow: 0 12px 28px #0005;
-}
-
-
-
-.num {
-background: var(--gold);
-color: #171d25;
-border-radius: 8px;
-}
-
-h2, h3 {
-color: #fff;
-}
-
-.instruction,
-.muted,
-.flash-counter,
-.phrase-counter,
-.match-hint,
-.story-note {
-color: #b5bec9;
-}
-
-.card,
-.context-item,
-.wordform-row,
-.definition-row,
-.story {
-background: #1d252f;
-border-color: #46515e;
-}
-
-.photo {
-background: linear-gradient(135deg, #303b48, #1b222b);
-border-color: #4c5867;
-color: #d0d7df;
-}
-
-.options label,
-.match-item,
-.bank-word {
-background: #303a47;
-border-color: #536172;
-color: #f2f4f7;
-}
-
-.options label:hover,
-.bank-word:hover {
-background: #3c4b5e;
-}
-
-.match-item.selected,
-.bank-word.selected {
-border: 2px solid var(--gold);
-background: #3c3a2b;
-color: #fff;
-}
-
-.match-item.matched {
-background: #24513c;
-border-color: #6bb58b;
-color: #fff;
-}
-
-.btn {
-background: #304d70;
-color: #fff;
-}
-
-.btn:hover {
-background: #3e628c;
-}
-
-.btn.light,
-.round-btn {
-background: #343f4d;
-border-color: #5a6879;
-color: #fff;
-}
-
-.btn.light:hover,
-.round-btn:hover {
-background: #435266;
-}
-
-input[type=text],
-textarea {
-background: #111922;
-color: #f5f7fa;
-border-color: #566273;
-}
-
-input[type=text]::placeholder,
-textarea::placeholder {
-color: #a3afbd;
-}
-
-input[type=text]:focus,
-textarea:focus {
-outline: 2px solid var(--gold);
-border-color: var(--gold);
-}
-
-.blank {
-background: #303a47;
-border-color: var(--gold);
-color: #fff;
-}
-
-.blank.active {
-outline-color: var(--gold);
-background: #49432b;
-}
-
-footer {
-color: #aeb8c5;
-}
-
-@media (max-width: 680px) {
-section::before {
-right: -90px;
-opacity: .10;
-}
-}
 </style>
-
 </head>
-
 <body>
 
 <header>
@@ -477,7 +296,7 @@ opacity: .10;
 <div class="num">6</div>
 <div>
 <h2>Match the words</h2>
-<p class="instruction">Click a noun on the left, then click the verb that goes with it on the right.</p>
+<p class="instruction">First, click a verb on the left. Then click the matching noun on the right.</p>
 </div>
 </div>
 <div class="match-board">
