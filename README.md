@@ -361,97 +361,10 @@ right: -90px;
 opacity: .10;
 }
 }
-/* ===== CLEAR POLICE CAUTION TAPE ===== */
-
-/* Main horizontal tape below the page title */
-header::after {
-content: "⚠ CAUTION ⚠";
-display: flex;
-align-items: center;
-justify-content: center;
-
-width: 100%;
-min-height: 46px;
-margin: 24px 0 0;
-padding: 10px 12px;
-
-background: repeating-linear-gradient(
-135deg,
-#171a20 0 14px,
-#f4c928 14px 28px
-);
-
-color: #ffffff;
-font-size: 20px;
-font-weight: 900;
-letter-spacing: 4px;
-text-align: center;
-text-shadow: 2px 2px 2px #000000;
-
-border-top: 3px solid #f4c928;
-border-bottom: 3px solid #f4c928;
-box-shadow: 0 4px 8px #0005;
-
-white-space: nowrap;
-transform: none;
-}
-
-/* Remove the old diagonal tape from the task background */
-section::before {
-content: none !important;
-display: none !important;
-}
-
-/* Horizontal tape above every task title */
-.task-tape {
-display: flex;
-align-items: center;
-justify-content: center;
-
-width: 100%;
-min-height: 38px;
-margin: 0 0 18px;
-padding: 8px 12px;
-
-background: repeating-linear-gradient(
-135deg,
-#171a20 0 14px,
-#f4c928 14px 28px
-);
-
-color: #ffffff;
-font-size: 16px;
-font-weight: 900;
-letter-spacing: 3px;
-text-align: center;
-text-shadow: 2px 2px 2px #000000;
-
-border-top: 2px solid #f4c928;
-border-bottom: 2px solid #f4c928;
-box-shadow: 0 3px 6px #0004;
-}
-
-/* Keep the task heading directly under the tape */
-.task-tape + .section-head {
-margin-top: 0;
-}
-
-/* Mobile display */
-@media (max-width: 480px) {
-header::after {
-min-height: 40px;
-font-size: 16px;
-letter-spacing: 2px;
-}
-
-.task-tape {
-min-height: 34px;
-font-size: 14px;
-letter-spacing: 2px;
-}
-}
 </style>
+
 </head>
+
 <body>
 
 <header>
