@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Crime and Criminals | English Lesson</title>
+}
 <style>
 :root{
 --navy:#24374b;--blue:#507da4;--blue-light:#eaf2f9;
@@ -181,6 +182,273 @@ main{padding:10px}
 @media(max-width:390px){
 .grid{grid-template-columns:1fr}
 .card .photo{height:165px}
+}
+/* POLICE CASE FILE THEME */
+:root {
+--navy: #101c2d;
+--blue: #263e5b;
+--blue-light: #e3e8ef;
+--bg: #171d25;
+--paper: #252d37;
+--line: #46515e;
+--muted: #b5bec9;
+--green: #26734d;
+--green-bg: #e0f3e7;
+--red: #a94449;
+--red-bg: #fff0f0;
+--gold: #f4c928;
+--blue-dark: #17283b;
+}
+
+body {
+background:
+radial-gradient(ellipse at top, #303a47 0%, #171d25 65%);
+color: #edf1f5;
+}
+
+header {
+position: relative;
+overflow: hidden;
+background: linear-gradient(135deg, #111a27, #26374c);
+border-bottom: 4px solid var(--gold);
+}
+
+
+
+.eyebrow {
+color: var(--gold);
+}
+
+header h1 {
+color: #fff;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+}
+
+header p {
+color: #c4ccd6;
+}
+
+section {
+position: relative;
+isolation: isolate;
+overflow: hidden;
+background: #252d37;
+border: 1px solid #485463;
+border-radius: 12px;
+box-shadow: 0 12px 28px #0005;
+}
+
+
+
+.num {
+background: var(--gold);
+color: #171d25;
+border-radius: 8px;
+}
+
+h2, h3 {
+color: #fff;
+}
+
+.instruction,
+.muted,
+.flash-counter,
+.phrase-counter,
+.match-hint,
+.story-note {
+color: #b5bec9;
+}
+
+.card,
+.context-item,
+.wordform-row,
+.definition-row,
+.story {
+background: #1d252f;
+border-color: #46515e;
+}
+
+.photo {
+background: linear-gradient(135deg, #303b48, #1b222b);
+border-color: #4c5867;
+color: #d0d7df;
+}
+
+.options label,
+.match-item,
+.bank-word {
+background: #303a47;
+border-color: #536172;
+color: #f2f4f7;
+}
+
+.options label:hover,
+.bank-word:hover {
+background: #3c4b5e;
+}
+
+.match-item.selected,
+.bank-word.selected {
+border: 2px solid var(--gold);
+background: #3c3a2b;
+color: #fff;
+}
+
+.match-item.matched {
+background: #24513c;
+border-color: #6bb58b;
+color: #fff;
+}
+
+.btn {
+background: #304d70;
+color: #fff;
+}
+
+.btn:hover {
+background: #3e628c;
+}
+
+.btn.light,
+.round-btn {
+background: #343f4d;
+border-color: #5a6879;
+color: #fff;
+}
+
+.btn.light:hover,
+.round-btn:hover {
+background: #435266;
+}
+
+input[type=text],
+textarea {
+background: #111922;
+color: #f5f7fa;
+border-color: #566273;
+}
+
+input[type=text]::placeholder,
+textarea::placeholder {
+color: #a3afbd;
+}
+
+input[type=text]:focus,
+textarea:focus {
+outline: 2px solid var(--gold);
+border-color: var(--gold);
+}
+
+.blank {
+background: #303a47;
+border-color: var(--gold);
+color: #fff;
+}
+
+.blank.active {
+outline-color: var(--gold);
+background: #49432b;
+}
+
+footer {
+color: #aeb8c5;
+}
+
+@media (max-width: 680px) {
+section::before {
+right: -90px;
+opacity: .10;
+}
+}
+/* ===== CLEAR POLICE CAUTION TAPE ===== */
+
+/* Main horizontal tape below the page title */
+header::after {
+content: "⚠ CAUTION ⚠";
+display: flex;
+align-items: center;
+justify-content: center;
+
+width: 100%;
+min-height: 46px;
+margin: 24px 0 0;
+padding: 10px 12px;
+
+background: repeating-linear-gradient(
+135deg,
+#171a20 0 14px,
+#f4c928 14px 28px
+);
+
+color: #ffffff;
+font-size: 20px;
+font-weight: 900;
+letter-spacing: 4px;
+text-align: center;
+text-shadow: 2px 2px 2px #000000;
+
+border-top: 3px solid #f4c928;
+border-bottom: 3px solid #f4c928;
+box-shadow: 0 4px 8px #0005;
+
+white-space: nowrap;
+transform: none;
+}
+
+/* Remove the old diagonal tape from the task background */
+section::before {
+content: none !important;
+display: none !important;
+}
+
+/* Horizontal tape above every task title */
+.task-tape {
+display: flex;
+align-items: center;
+justify-content: center;
+
+width: 100%;
+min-height: 38px;
+margin: 0 0 18px;
+padding: 8px 12px;
+
+background: repeating-linear-gradient(
+135deg,
+#171a20 0 14px,
+#f4c928 14px 28px
+);
+
+color: #ffffff;
+font-size: 16px;
+font-weight: 900;
+letter-spacing: 3px;
+text-align: center;
+text-shadow: 2px 2px 2px #000000;
+
+border-top: 2px solid #f4c928;
+border-bottom: 2px solid #f4c928;
+box-shadow: 0 3px 6px #0004;
+}
+
+/* Keep the task heading directly under the tape */
+.task-tape + .section-head {
+margin-top: 0;
+}
+
+/* Mobile display */
+@media (max-width: 480px) {
+header::after {
+min-height: 40px;
+font-size: 16px;
+letter-spacing: 2px;
+}
+
+.task-tape {
+min-height: 34px;
+font-size: 14px;
+letter-spacing: 2px;
+}
 }
 </style>
 </head>
@@ -522,41 +790,91 @@ $("nextPhrase").onclick=()=>{phraseIndex=(phraseIndex+1)%phrases.length;renderPh
 $("shufflePhrases").onclick=()=>{phraseOrder=shuffle(phraseOrder);phraseIndex=0;renderPhrase()};
 renderPhrase();
 
-/* TASK 6: match nouns and verbs */
-let chosenNoun=null,matchedPairs={};
-function renderMatching(){
-chosenNoun=null;matchedPairs={};
-$("nounColumn").innerHTML=shuffle(phrases).map(p=>
-`<button class="match-item" data-noun="${p.noun}">${p.noun}</button>`).join("");
-$("verbColumn").innerHTML=shuffle(phrases).map(p=>
-`<button class="match-item" data-verb="${p.verb}" data-noun-for="${p.noun}">${p.verb}</button>`).join("");
-$("matchFeedback").textContent="";
-document.querySelectorAll("#nounColumn button").forEach(b=>b.onclick=()=>{
-if(matchedPairs[b.dataset.noun])return;
-chosenNoun=b.dataset.noun;updateMatchingStyles();
+/* TASK 6: match verbs first, then nouns */
+let chosenVerb = null;
+let matchedPairs = {};
+
+function renderMatching() {
+chosenVerb = null;
+matchedPairs = {};
+
+$("verbColumn").innerHTML = shuffle(phrases).map(p =>
+`<button class="match-item" data-verb="${p.verb}">
+${p.verb}
+</button>`
+).join("");
+
+$("nounColumn").innerHTML = shuffle(phrases).map(p =>
+`<button class="match-item"
+data-noun="${p.noun}"
+data-verb-for="${p.verb}">
+${p.noun}
+</button>`
+).join("");
+
+$("matchFeedback").textContent = "";
+
+document.querySelectorAll("#verbColumn button").forEach(button => {
+button.onclick = () => {
+if (matchedPairs[button.dataset.verb]) return;
+
+chosenVerb = button.dataset.verb;
+$("matchFeedback").textContent =
+"Now choose the matching noun on the right.";
+updateMatchingStyles();
+};
 });
-document.querySelectorAll("#verbColumn button").forEach(b=>b.onclick=()=>{
-if(!chosenNoun){$("matchFeedback").textContent="Select a noun first.";return;}
-if(b.dataset.nounFor===chosenNoun){
-matchedPairs[chosenNoun]=true;chosenNoun=null;updateMatchingStyles();
-$("matchFeedback").textContent=Object.keys(matchedPairs).length===phrases.length
-?"Excellent! All pairs are correct.":"Correct! Keep going.";
-}else{
-$("matchFeedback").textContent="Not a match. Try again.";
+
+document.querySelectorAll("#nounColumn button").forEach(button => {
+button.onclick = () => {
+if (!chosenVerb) {
+$("matchFeedback").textContent =
+"Select a verb in the left column first.";
+return;
 }
+
+if (button.dataset.verbFor === chosenVerb) {
+matchedPairs[chosenVerb] = true;
+chosenVerb = null;
+updateMatchingStyles();
+
+$("matchFeedback").textContent =
+Object.keys(matchedPairs).length === phrases.length
+? "Excellent! All pairs are correct."
+: "Correct! Choose the next verb.";
+} else {
+$("matchFeedback").textContent =
+"Not a match. Try another noun.";
+}
+};
 });
+
 updateMatchingStyles();
 }
-function updateMatchingStyles(){
-document.querySelectorAll("#nounColumn button").forEach(b=>{
-b.classList.toggle("selected",b.dataset.noun===chosenNoun);
-b.classList.toggle("matched",!!matchedPairs[b.dataset.noun]);
+
+function updateMatchingStyles() {
+document.querySelectorAll("#verbColumn button").forEach(button => {
+button.classList.toggle(
+"selected",
+button.dataset.verb === chosenVerb
+);
+button.classList.toggle(
+"matched",
+!!matchedPairs[button.dataset.verb]
+);
 });
-document.querySelectorAll("#verbColumn button").forEach(b=>
-b.classList.toggle("matched",!!matchedPairs[b.dataset.nounFor]));
+
+document.querySelectorAll("#nounColumn button").forEach(button => {
+button.classList.toggle(
+"matched",
+!!matchedPairs[button.dataset.verbFor]
+);
+});
 }
-$("resetMatch").onclick=renderMatching;
+
+$("resetMatch").onclick = renderMatching;
 renderMatching();
+
 
 /* TASK 7: definitions */
 const definitions = [
@@ -627,38 +945,43 @@ renderDefinitions();
 /* TASK 8: click a gap, then choose a word */
 
 const storyHTML = `
-Last Friday, the police received several reports about crimes in a small town.
-First, someone broke into a house and stole a computer. The police believed it was
+Last Friday, the police received reports about several crimes in a small town.
+
+Someone entered a house without permission while the owners were away and stole a computer. The police recorded the crime as
 <button class="blank" data-gap="0">1. ______</button>.
 
-Later, a shop owner reported
-<button class="blank" data-gap="1">2. ______</button>
-because several products had disappeared from the shelves.
-A witness also saw a person writing on a wall. This was probably
+A shop assistant then noticed that a customer had secretly taken products from the shelves without paying. This was
+<button class="blank" data-gap="1">2. ______</button>.
+
+A witness reported that someone had damaged a bus stop by breaking its windows and writing on the walls. This was
 <button class="blank" data-gap="2">3. ______</button>.
 
-The police decided to
-<button class="blank" data-gap="3">4. ______</button>
-and
+The police opened an official inquiry into all three incidents. They decided to
+<button class="blank" data-gap="3">4. ______</button>.
+
+During the inquiry, an officer questioned the person whom the police suspected of being involved in the shoplifting. The officer needed to
 <button class="blank" data-gap="4">5. ______</button>.
-They also asked the public to
+
+The police had not yet found everyone who had seen the incidents. They asked anyone who had witnessed the crimes to contact them and decided to
 <button class="blank" data-gap="5">6. ______</button>.
 
-An officer went to
-<button class="blank" data-gap="6">7. ______</button>
-while another officer began to
+To look for evidence connected with the burglary, officers went inside the house and examined the rooms. They needed to
+<button class="blank" data-gap="6">7. ______</button>.
+
+The shop also had security cameras. The police watched the recordings to see what had happened and decided to
 <button class="blank" data-gap="7">8. ______</button>.
 
-A few days later, the police managed to
-<button class="blank" data-gap="8">9. ______</button>
-and
+After examining the evidence, the police worked out who was responsible. They managed to
+<button class="blank" data-gap="8">9. ______</button>.
+
+They then took the suspect into police custody and proceeded to
 <button class="blank" data-gap="9">10. ______</button>.
 
-The case showed that crimes such as
-<button class="blank" data-gap="10">11. ______</button>
-and
-<button class="blank" data-gap="11">12. ______</button>
-can affect a whole community.
+The investigation showed that taking property without permission is a crime called
+<button class="blank" data-gap="10">11. ______</button>.
+
+It also reminded the community that using threats or force to steal money or property from a person or place is
+<button class="blank" data-gap="11">12. ______</button>.
 `;
 
 const storyAnswers = [
